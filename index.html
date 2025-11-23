@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programma Attività</title>
+
+    <!-- FONT POPPINS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+    <div class="topbar-title">
+        Programma Attività
+        <small>Consultazione giornaliera</small>
+    </div>
+    <div id="data-odierna" class="topbar-date"></div>
+
+    <div class="tabs">
+        <button class="tab active" id="btn-giorno">Giorno</button>
+        <button class="tab" id="btn-sera">Sera</button>
+    </div>
+</div>
+
+<div class="content">
+
+    <div class="pill-row">
+        <button class="pill pill-outline active" data-sector="TUTTI">Tutti</button>
+        <button class="pill pill-verde" data-sector="VIK">VIK</button>
+        <button class="pill pill-blu" data-sector="SPORT">Sport</button>
+        <button class="pill pill-viola" data-sector="SPETTACOLI">Spettacoli</button>
+        <button class="pill pill-arancione" data-sector="RANGER">Ranger</button>
+        <button class="pill pill-giallo" data-sector="TORNEI">Tornei</button>
+    </div>
+
+    <div id="attivita-container"></div>
+
+    <div id="empty-state" class="empty-state">
+        Nessuna attività disponibile con i filtri selezionati.
+    </div>
+
+</div>
+
+<div class="footer">
+    Versione MVP
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
